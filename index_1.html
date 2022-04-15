@@ -1,0 +1,103 @@
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>호버하면 상세설명 나타나는 상품목록</title>
+  <style>
+    /* Google Web Font */
+    @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+    
+    body {
+      font-family: 'Raleway', sans-serif;
+      color: #222;
+      line-height: 1.5em;
+      font-weight: 300;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    a {
+      color: #222;
+      text-decoration: none;
+    }
+    .items {
+      text-align: center;
+    }
+    .item {
+      display: inline-block;
+      width: 300px;
+      height: 300px;
+      border: 1px solid #ddd;
+      position: relative;
+      margin: 10px;
+    }
+    .caption {
+      width: 300px;
+      height: 300px;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      padding-top: 40px;
+      opacity: 0;
+      transition: 0.5s;
+    }
+    .caption a {
+      color: #fff;
+      background-color: teal;
+      padding: 7px;
+      border-radius: 3px;
+    }
+    .caption a:hover {
+      background-color: #fff;
+      color: #000;
+    }
+    .item:hover .caption {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+ 
+  <div class="items">
+    <div class="item">
+      <img src="images/bg3" alt="">
+      <div class="caption">
+        <h2>봄에 피는 예쁜 꽃</h2>
+        <p>
+                  진달래
+        </p>
+        <p> : <s>$12</s> → $10</p>
+        <a href="#none">상세보기</a>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/bg2.png" alt="">
+      <div class="caption">
+        <h2>봄에 피는 예쁜 꽃</h2>
+        <p>
+                  목련
+        </p>
+        <p>볼 수 있는 곳 </p> : <s>태안</s> → 천리포 수목원</p>
+        <a href="">상세보기</a>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/bg1.png" alt="">
+      <div class="caption">
+        <h2>봄에 피는 예쁜 꽃</h2>
+        <p>
+                  매화
+        </p>
+        <p>볼 수 있는곳 : <s>담양</s> → 매실농장</p>
+        <a href="">상세보기</a>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
